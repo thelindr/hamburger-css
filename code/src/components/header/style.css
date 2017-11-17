@@ -1,0 +1,15 @@
+header {
+  background: #FFDFE7;
+}
+
+header a {
+  color: #FE3525;
+  font-family: BigJohn;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.header-grid {
+  display: flex;
+  justify-content: space-between;
+}
