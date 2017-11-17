@@ -1,10 +1,14 @@
 import React from "react"
 import "./style.css"
 
-const Grid = props => (
-  <div className={`grid ${props.className}`}>
-    {props.children}
-  </div>
-)
+class Grid extends React.Component {
+  render() {
+    return (
+      <div className={`grid ${this.props.className}`}>
+        {this.props.children}
+      </div>
+    )
+  }
+}
 
 export default Grid

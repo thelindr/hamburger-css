@@ -5,21 +5,25 @@ import Button from "lib/button"
 
 import "./style.css"
 
-const CourseOverview = () => (
-  <div className="course-overview">
-    <Grid>
-      <ShoutyText className="title" text="Upcoming boot camp" />
+class CourseOverview extends React.Component {
+  render() {
+    return (
+      <div className="course-overview">
+        <Grid>
+          <ShoutyText className="title" text="Upcoming boot camp" />
 
-      <p>
-        Start learning how to build websites and digital products to reach
-        and affect people by the many. Enable digital creativity with tools
-        like programming and technology. Change direction and start work
-        with web development.
-      </p>
+          <p>
+            Start learning how to build websites and digital products to reach
+            and affect people by the many. Enable digital creativity with tools
+            like programming and technology. Change direction and start work
+            with web development.
+          </p>
 
-      <Button className="button" text="Tell me more" />
-    </Grid>
-  </div>
-)
+          <Button className="button" text="Tell me more" />
+        </Grid>
+      </div>
+    )
+  }
+}
 
 export default CourseOverview

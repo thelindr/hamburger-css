@@ -1,10 +1,14 @@
 import React from "react"
 import "./style.css"
 
-const ShoutyText = props => (
-  <div className={`shouty-text ${props.className}`}>
-    {props.text}
-  </div>
-)
+class ShoutyText extends React.Component {
+  render() {
+    return (
+      <div className={`shouty-text ${this.props.className}`}>
+        {this.props.text}
+      </div>
+    )
+  }
+}
 
 export default ShoutyText

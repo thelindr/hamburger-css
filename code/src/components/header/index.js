@@ -9,10 +9,10 @@ class Header extends React.Component {
     return (
       <header>
         <Grid className="header-grid">
-          <a href="">Technigo</a>
-          <a href="">Boot Camp</a>
-          <a href="">Stories</a>
-          <a href="">About</a>
+          <a href="http://technigo.io">Technigo</a>
+          <a href="http://technigo.io">Boot Camp</a>
+          <a href="http://technigo.io">Stories</a>
+          <a href="http://technigo.io">About</a>
         </Grid>
       </header>
     )
