@@ -1,5 +1,5 @@
 header {
-  background: #FFDFE7;
+  background: pink;
 }
 
 header a {
@@ -12,4 +12,67 @@ header a {
 .header-grid {
   display: flex;
   justify-content: space-between;
+}
+
+.hamburger {
+display: none;
+
+}
+
+.menu {
+  width: 100%;
+  transition: all 0.5s ease-in-out, opacity 1s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+
+  .header-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 40px;
+    width: 100%;
+    position: absolute;
+    top: -105px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    background-color: pink;
+    margin-left: -20px;
+    z-index: 0;
+    border-bottom-right-radius: 25px;
+  }
+
+  header a {
+    padding: 10px;
+  }
+
+  .hamburger {
+    width: 45px;
+    height: 45px;
+    background-image: url(http://downloadfreesvgicons.com/icons/arrow-icons/svg-red-down-arrow-icon-1/svg-red-down-arrow-icon-1.svg);
+    background-size: contain;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .hamburger-checkbox {
+    display: none;
+  }
+
+  .hamburger-checkbox:checked + .menu {
+    top: 0;
+  }
+
 }
